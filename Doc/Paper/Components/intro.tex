@@ -37,6 +37,13 @@ Se propone desarrollar una aplicación móvil en Flutter y otra web con Astro + 
 
 El sistema propuesto tendrá en cuenta los datos mediante la integración del concepto de Ant Colony Optimization (ACO). En esta arquitectura, el flujo de trabajo se modela como un grafo dinámico donde los ejecutivos actúan como agentes ("hormigas") que depositan feromonas digitales en las rutas de éxito comercial. Cada interacción exitosa, desde la prospección hasta el desembolso, refuerza un camino específico, permitiendo que el sistema aprenda colectivamente cuáles son los perfiles de cliente y productos con mayor probabilidad de cierre en tiempo real.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\columnwidth]{media/design/2026-04-27-08-26-08.png}
+    \captionof{figure}{Imagen referencial del concepto de Ant Colony Optimization (ACO) \cite{dorigo2004ant}}
+    \label{fig:referencial}
+\end{figure}
+
 
 Para el ejecutivo comercial, el sistema automatiza la priorización de su cartera mediante una lista dinámica de llamadas y gestiones. En lugar de seguir un orden cronológico simple, el algoritmo ordena las tareas según la intensidad de la feromona depositada por el enjambre en actividades similares. Esto optimiza el proceso de registro diario, permitiendo al personal de campo enfocar sus esfuerzos en los leads que presentan una mayor "frescura" y probabilidad de conversión, maximizando así la eficiencia operativa de la entidad financiera.
 
@@ -46,3 +53,9 @@ Desde la vertiente administrativa, el sistema elimina la dependencia de reportes
     \item El sistema agrupa automáticamente los montos por línea operativa; una alta actividad se traduce en una "feromona brillante", mientras que la ausencia de registros activa alertas rojas de estancamiento, permitiendo intervenciones correctivas inmediatas antes del cierre mensual.
     \item La herramienta introduce una métrica de envejecimiento de créditos, al rastrear el tiempo transcurrido desde la primera aparición de un cliente en el formulario hasta su desembolso, el ACO detecta cuándo una feromona comienza a "evaporarse" debido a la inactividad. Esto permite al gerente identificar cuellos de botella específicos y predecir con alta precisión el ingreso real de capital, diferenciando los créditos con alta probabilidad de cierre de aquellos que se han estancado en la fase de evaluación.
 \end{itemize}
+
+
+
+Un desafío crítico en la aplicación del ACO estándar es el riesgo de "inanición" de datos para clientes con ciclos de vida largos, típicamente de 9 a 12 meses. En un modelo convencional, el rastro de feromona se evaporaría por completo mucho antes de que el cliente requiera un nuevo servicio, causando que el sistema ignore oportunidades valiosas. Para mitigar esto, se ha perfeccionado el algoritmo mediante un mecanismo de Feromona de Activación Retardada, el cual sustituye la evaporación lineal constante por una programación basada en el historial de desembolsos previos. Bajo este enfoque, cuando el sistema identifica un perfil de "Recurrente Estacional", la tasa de evaporación ($\rho$) se reduce drásticamente durante el periodo de inactividad, manteniendo el rastro en un estado "latente" que preserva la relevancia del cliente en la base de conocimiento del enjambre.La operatividad de esta mejora se centra en la Re-inyección Automática de Feromona. Utilizando el patrón de recurrencia identificado, el sistema inyecta automáticamente una carga de feromona de alta intensidad aproximadamente 30 días antes de que se cumpla el ciclo previsto de 12 meses. Esta priorización predictiva garantiza que, a pesar de la ausencia de actividad reciente, el cliente emerja en la cima de la lista de tareas del ejecutivo justo en el momento de mayor probabilidad de necesidad financiera. De esta manera, el sistema trasciende el simple recordatorio manual para convertirse en un motor de inteligencia comercial que anticipa la demanda antes de que el cliente busque otras alternativas en el mercado.
+
+Finalmente, esta optimización impacta profundamente en la analítica gerencial, transformando todo lo anterior propuesto en una herramienta avanzada de planeación de demanda. El gerente puede visualizar "olas" de feromonas que se activarán en meses futuros, lo que facilita una gestión proactiva de la liquidez necesaria para cubrir dichos desembolsos. Al sincronizar el comportamiento de los agentes con los ciclos naturales del capital de los clientes, la institución logra una eficiencia operativa superior, asegurando que la fuerza de ventas actúe con precisión en el momento exacto en que la probabilidad de conversión es máxima.

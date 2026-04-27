@@ -16,5 +16,46 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{dorigo2004ant}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=26c8dbd8b76182fc666371044ae8dfa4}{%
+           family={Dorigo},
+           familyi={D\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+        {{hash=fe8c0dacc6efae8023b930228f5abc18}{%
+           family={Stützle},
+           familyi={S\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge, MA, USA}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{d6840e662b926aa9de09fe95fd30cbfa}
+      \strng{fullhash}{d6840e662b926aa9de09fe95fd30cbfa}
+      \strng{fullhashraw}{d6840e662b926aa9de09fe95fd30cbfa}
+      \strng{bibnamehash}{d6840e662b926aa9de09fe95fd30cbfa}
+      \strng{authorbibnamehash}{d6840e662b926aa9de09fe95fd30cbfa}
+      \strng{authornamehash}{d6840e662b926aa9de09fe95fd30cbfa}
+      \strng{authorfullhash}{d6840e662b926aa9de09fe95fd30cbfa}
+      \strng{authorfullhashraw}{d6840e662b926aa9de09fe95fd30cbfa}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0262042192}
+      \field{series}{A Bradford Book}
+      \field{title}{Ant Colony Optimization}
+      \field{year}{2004}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 
